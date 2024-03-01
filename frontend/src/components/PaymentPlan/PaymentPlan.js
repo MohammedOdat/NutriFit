@@ -35,7 +35,7 @@ function PaymentPlan() {
         }
       },[state.theme]);
     useEffect(()=>{
-        axios.get(`http://localhost:5000/gyms/plan/${planid}/select`, config).then((result) => {
+        axios.get(`https://nutrifit-g0gn.onrender.com/gyms/plan/${planid}/select`, config).then((result) => {
             setDataPlanForInvoice(result.data.plan);
             setTotalPrice(Number(result.data.plan.price_plan)+0.48)
         }).catch((err) => {
@@ -45,7 +45,7 @@ function PaymentPlan() {
     },[])
     const handlePay = ()=>{
         if(numberCard && nameOnCard && expirationDate && cVV){
-            axios.post(`http://localhost:5000/gyms/gym/user`, 
+            axios.post(`https://nutrifit-g0gn.onrender.com/gyms/gym/user`, 
             {gymId : gymid, planId : planid, numOfMonth : dataPlanForInvoice.numofmonth_plan, userId: state.userId},
             config).then((result) => {
                 navigate(`/gym/${gymid}`);

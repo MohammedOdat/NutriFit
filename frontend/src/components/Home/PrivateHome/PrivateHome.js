@@ -35,7 +35,7 @@ const PrivateHome = () => {
   }, []);
 const getAllCoachesByUserId =()=>{
   setUserLoading(true)
-  axios.get(`http://localhost:5000/coachs/coach`, {
+  axios.get(`https://nutrifit-g0gn.onrender.com/coachs/coach`, {
     headers: {
       Authorization: `Bearer ${authState.token}`,
     },
@@ -52,7 +52,7 @@ const getAllCoachesByUserId =()=>{
 
   const getAllCoaches = () => {
     setCoachLoading(true)
-    axios.get("http://localhost:5000/coachs/filter/", {
+    axios.get("https://nutrifit-g0gn.onrender.com/coachs/filter/", {
       headers: {
         Authorization: `Bearer ${authState.token}`,
       },

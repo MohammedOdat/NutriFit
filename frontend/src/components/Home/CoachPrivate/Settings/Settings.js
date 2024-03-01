@@ -41,7 +41,7 @@ const Settings = () => {
 
   const getAllPlans = () => {
     axios
-      .get(`http://localhost:5000/coachs/plan/${userId}`, {
+      .get(`https://nutrifit-g0gn.onrender.com/coachs/plan/${userId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -65,7 +65,7 @@ const Settings = () => {
   };
   const updatePlan=(name)=>{
     setAbeled(true);
-    axios.put(`http://localhost:5000/coachs/plan`,{name:name,description,numOfMonth,price}, {
+    axios.put(`https://nutrifit-g0gn.onrender.com/coachs/plan`,{name:name,description,numOfMonth,price}, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -83,7 +83,7 @@ const Settings = () => {
     })
   }
   const deletePlan=(name)=>{
-    axios.put(`http://localhost:5000/coachs/remove/plan`,{name:name}, {
+    axios.put(`https://nutrifit-g0gn.onrender.com/coachs/remove/plan`,{name:name}, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -98,7 +98,7 @@ const Settings = () => {
   }
   const disActivePrivate = () => {
     axios
-      .get(`http://localhost:5000/coachs/private/disactive`, {
+      .get(`https://nutrifit-g0gn.onrender.com/coachs/private/disactive`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -123,7 +123,7 @@ const Settings = () => {
     if (name && description && price && numOfMonth) {
       axios
         .post(
-          `http://localhost:5000/coachs/plan`,
+          `https://nutrifit-g0gn.onrender.com/coachs/plan`,
           { name: name, description, price, numOfMonth },
           {
             headers: {
@@ -152,7 +152,7 @@ const Settings = () => {
 
   const activePrivateFun = () => {
     axios
-      .get(`http://localhost:5000/coachs/private`, {
+      .get(`https://nutrifit-g0gn.onrender.com/coachs/private`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

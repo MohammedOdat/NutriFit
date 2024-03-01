@@ -58,7 +58,7 @@ const UserInfo  = () => {
 const createUserInfo =async()=>{
   if(weight&&height&&goal){
     try {
-        const result =await axios.post(`http://localhost:5000/users/info/create`, 
+        const result =await axios.post(`https://nutrifit-g0gn.onrender.com/users/info/create`, 
 
         {
 

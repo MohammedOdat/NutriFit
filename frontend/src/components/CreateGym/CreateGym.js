@@ -24,7 +24,7 @@ function CreateGym() {
 
     const createGym = ()=>{
       if(name && description){
-          axios.post("http://localhost:5000/gyms", {name, description}, config).then((result) => {
+          axios.post("https://nutrifit-g0gn.onrender.com/gyms", {name, description}, config).then((result) => {
             console.log(result);
             navigate(-1);
           }).catch((err) => {

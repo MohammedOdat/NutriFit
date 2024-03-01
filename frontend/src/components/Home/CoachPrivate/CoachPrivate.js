@@ -88,7 +88,7 @@ const handleImageClick = () => {
 
 useEffect(()=>{
   setAllMessages([])
-  axios.get(`http://localhost:5000/coachs/message/${userId}/${toId}`,{headers:{
+  axios.get(`https://nutrifit-g0gn.onrender.com/coachs/message/${userId}/${toId}`,{headers:{
     Authorization:`Bearer ${token}`
   }}).then((result)=>{
     setAllMessages(result.data.messages)
@@ -107,7 +107,7 @@ useEffect(()=>{
 
 
 useEffect(()=>{
-  axios.get(`http://localhost:5000/users/info/${userId}`,{headers:{
+  axios.get(`https://nutrifit-g0gn.onrender.com/users/info/${userId}`,{headers:{
     Authorization:`Bearer ${token}`
   }}).then((result)=>{
     setImage(result.data.info.image)
@@ -156,7 +156,7 @@ const disconnectServer = ()=>{
   const removeUserFromPrivate = (user_id, coach_id) => {
     axios
       .put(
-        `http://localhost:5000/coachs/user/remove`,
+        `https://nutrifit-g0gn.onrender.com/coachs/user/remove`,
         { user_id: user_id, coach_id: coach_id },
         {
           headers: {
@@ -173,7 +173,7 @@ const disconnectServer = ()=>{
   };
   const getAllUsers = () => {
     axios
-      .get(`http://localhost:5000/coachs/user`, {
+      .get(`https://nutrifit-g0gn.onrender.com/coachs/user`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

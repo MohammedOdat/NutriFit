@@ -38,7 +38,7 @@ function NavBar() {
     headers: { Authorization: `Bearer ${state.token}` }
   }
   useEffect(()=>{
-    axios.get(`http://localhost:5000/users/info/${state.userId}`, config).then((result) => {
+    axios.get(`https://nutrifit-g0gn.onrender.com/users/info/${state.userId}`, config).then((result) => {
       localStorage.setItem("userImage", result.data.info.image);
     }).catch((err) => {
     });

@@ -30,7 +30,7 @@ function GymHome() {
         localStorage.clear();
             navigate('/login')
       }else{
-        axios.get(`http://localhost:5000/gyms/owner/${state.userId}`,config).then((result) => {
+        axios.get(`https://nutrifit-g0gn.onrender.com/gyms/owner/${state.userId}`,config).then((result) => {
           console.log(result);
           console.log("result", result);
           setOwnerGym(result.data.result); 
@@ -38,7 +38,7 @@ function GymHome() {
         }).catch((err) => {
           console.log(err);
         });
-        axios.get(`http://localhost:5000/gyms/user/${state.userId}`, config).then((result) => {
+        axios.get(`https://nutrifit-g0gn.onrender.com/gyms/user/${state.userId}`, config).then((result) => {
           setMyGym(result.data.gyms);
         }).catch((err) => {
           if(err.response.data.message === "The token is invalid or expired"){

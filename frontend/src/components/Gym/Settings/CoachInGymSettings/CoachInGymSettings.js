@@ -26,7 +26,7 @@ function CoachInGymSettings() {
   }
 
   useEffect(()=>{
-    axios.get(`http://localhost:5000/gyms/${gymid}/coach`, config).then((result) => {
+    axios.get(`https://nutrifit-g0gn.onrender.com/gyms/${gymid}/coach`, config).then((result) => {
       setCoachInGym(result.data.coachs);
     }).catch((err) => {
       
@@ -87,7 +87,7 @@ function CoachInGymSettings() {
         <Modal.Body>you are sure? please choose the plan</Modal.Body>
         <Modal.Footer>
           <Button style={{backgroundColor:"gray", color:"white",fontWeight:"bold", border:"0"}} onClick={()=>{
-            axios.post(`http://localhost:5000/gyms/coach/down`, { gymid , userid : coachsInGym[indexUserInArr].id, name_plan : "Lite"}, config).then((result) => {
+            axios.post(`https://nutrifit-g0gn.onrender.com/gyms/coach/down`, { gymid , userid : coachsInGym[indexUserInArr].id, name_plan : "Lite"}, config).then((result) => {
               coachsInGym.splice(indexUserInArr, 1);
               handleClose()
             }).catch((err) => {
@@ -97,7 +97,7 @@ function CoachInGymSettings() {
             Lite
           </Button>
           <Button style={{backgroundColor:"gold", color:"#101010",fontWeight:"bold", border:"0"}} onClick={()=>{
-            axios.post(`http://localhost:5000/gyms/coach/down`, { gymid , userid : coachsInGym[indexUserInArr].id, name_plan : "Gold"}, config).then((result) => {
+            axios.post(`https://nutrifit-g0gn.onrender.com/gyms/coach/down`, { gymid , userid : coachsInGym[indexUserInArr].id, name_plan : "Gold"}, config).then((result) => {
               coachsInGym.splice(indexUserInArr, 1);
               handleClose()
             }).catch((err) => {
@@ -107,7 +107,7 @@ function CoachInGymSettings() {
             Gold
           </Button>
           <Button style={{backgroundColor:"#A1E533", color:"#101010",fontWeight:"bold",border:"0"}} onClick={()=>{
-            axios.post(`http://localhost:5000/gyms/coach/down`, { gymid , userid : coachsInGym[indexUserInArr].id, name_plan : "Premium"}, config).then((result) => {
+            axios.post(`https://nutrifit-g0gn.onrender.com/gyms/coach/down`, { gymid , userid : coachsInGym[indexUserInArr].id, name_plan : "Premium"}, config).then((result) => {
               coachsInGym.splice(indexUserInArr, 1);
               handleClose()
             }).catch((err) => {

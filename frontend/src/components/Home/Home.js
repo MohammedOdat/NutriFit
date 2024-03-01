@@ -46,7 +46,7 @@ function Home() {
     headers: { Authorization: `Bearer ${token}` }
   }
 useEffect(()=>{
-  axios.get(`http://localhost:5000/users/info/${userId}`,config).then((result)=>{
+  axios.get(`https://nutrifit-g0gn.onrender.com/users/info/${userId}`,config).then((result)=>{
     if(!result.data.success){
       console.log(result);
       navigate('/userinfo')

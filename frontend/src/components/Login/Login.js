@@ -43,7 +43,7 @@ const Login = () => {
     const responseMessage = (response) => {
       const user = decodeToken(response.credential);
       axios
-        .post("http://localhost:5000/users/register", {
+        .post("https://nutrifit-g0gn.onrender.com/users/register", {
           firstName: user.given_name,
           lastName: user.family_name,
           email: user.email,
@@ -53,7 +53,7 @@ const Login = () => {
         })
         .then((result) => {
           axios
-            .post("http://localhost:5000/users/login", {
+            .post("https://nutrifit-g0gn.onrender.com/users/login", {
               email: user.email,
               password: user.sub,
             })
@@ -82,7 +82,7 @@ const Login = () => {
         .catch((err) => {
           if (err.response.data.message === "The email already exists") {
             axios
-              .post("http://localhost:5000/users/login", {
+              .post("https://nutrifit-g0gn.onrender.com/users/login", {
                 email: user.email,
                 password: user.sub,
               })
@@ -119,7 +119,7 @@ const Login = () => {
           if(!email || !password){
             setMessage("Conn't Send Empty Data")
           }else{
-            axios.post("http://localhost:5000/users/login", {
+            axios.post("https://nutrifit-g0gn.onrender.com/users/login", {
               email,
               password,
             }).then((result)=>{

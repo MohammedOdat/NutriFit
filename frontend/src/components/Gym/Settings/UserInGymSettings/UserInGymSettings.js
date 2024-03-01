@@ -23,7 +23,7 @@ function UserInGymSettings() {
     headers: { Authorization: `Bearer ${state.token}` }
   }
   useEffect(()=>{
-    axios.get(`http://localhost:5000/gyms/${gymid}/user`, config).then((result) => {
+    axios.get(`https://nutrifit-g0gn.onrender.com/gyms/${gymid}/user`, config).then((result) => {
       setUserInGym(result.data.users);
       console.log(result.data.users);
     }).catch((err) => {
@@ -100,7 +100,7 @@ console.log(userInGym);
             No
           </Button>
           <Button style={{backgroundColor:"#A1E533", color:"#101010",fontWeight:"bold",border:"0"}} onClick={()=>{
-            axios.post(`http://localhost:5000/gyms/gym/coach`, {gymId : gymid, coachId : userInGym[indexUserInArr].id}, config).then((result) => {
+            axios.post(`https://nutrifit-g0gn.onrender.com/gyms/gym/coach`, {gymId : gymid, coachId : userInGym[indexUserInArr].id}, config).then((result) => {
               userInGym.splice(indexUserInArr, 1);
               handleClose()
             }).catch((err) => {

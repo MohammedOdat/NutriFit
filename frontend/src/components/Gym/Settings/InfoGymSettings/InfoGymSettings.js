@@ -52,9 +52,9 @@ function InfoGymSettings() {
     }
 
     useEffect(()=>{
-        axios.get(`http://localhost:5000/gyms/${gymid}`,config).then((result) => {
+        axios.get(`https://nutrifit-g0gn.onrender.com/gyms/${gymid}`,config).then((result) => {
             setDataGym(result.data.oneGym);
-            axios.get(`http://localhost:5000/gyms/plan/${gymid}`,config).then((resultPlan) => {
+            axios.get(`https://nutrifit-g0gn.onrender.com/gyms/plan/${gymid}`,config).then((resultPlan) => {
                 resultPlan.data.plans.map((e,i)=>{
                     if(e.name_plan === 'Lite'){
                         setDataLitePlan(e);
@@ -197,7 +197,7 @@ function InfoGymSettings() {
         <div style={{height:"5%"}}>
             <button style={!onTheme ? {width:"50%", border:"0", backgroundColor:"#A1E533", borderRadius:"4px", padding:"4px"} : {width:"50%", border:"0", backgroundColor:"#E333E5", borderRadius:"4px", padding:"4px"}} onClick={()=>{
                 if(nameGym || descriptionGym || imageUrl){
-                axios.put(`http://localhost:5000/gyms/${gymid}`, {name : nameGym, description : descriptionGym, image : imageUrl}, config).then((result) => {
+                axios.put(`https://nutrifit-g0gn.onrender.com/gyms/${gymid}`, {name : nameGym, description : descriptionGym, image : imageUrl}, config).then((result) => {
                     setNameGym(null);
                     setDescriptionGym(null);
                     setShowAlert(true);
@@ -208,7 +208,7 @@ function InfoGymSettings() {
                 }
 
                 if (!dataLitePlan && pricePlanLite && monthSupLite && descPlanLite) {
-                    axios.post(`http://localhost:5000/gyms/${gymid}/plan/create`,
+                    axios.post(`https://nutrifit-g0gn.onrender.com/gyms/${gymid}/plan/create`,
                         { name: "Lite", description: descPlanLite, numOfMonth: monthSupLite, price: pricePlanLite },
                         config)
                         .then(() => {
@@ -219,7 +219,7 @@ function InfoGymSettings() {
                             console.log(err);
                         });
                 } else if (dataLitePlan && (pricePlanLite || monthSupLite || descPlanLite)) {
-                    axios.put(`http://localhost:5000/gyms/plan/${dataLitePlan.id_plan}/update`,
+                    axios.put(`https://nutrifit-g0gn.onrender.com/gyms/plan/${dataLitePlan.id_plan}/update`,
                         { name: 'Lite', description: descPlanLite, numOfMonth: monthSupLite, price: pricePlanLite },
                         config)
                         .then(() => {
@@ -231,7 +231,7 @@ function InfoGymSettings() {
                 }
             
                 if (!dataGoldPlan && pricePlanGold && monthSupGold && descPlanGold) {
-                    axios.post(`http://localhost:5000/gyms/${gymid}/plan/create`,
+                    axios.post(`https://nutrifit-g0gn.onrender.com/gyms/${gymid}/plan/create`,
                         { name: "Gold", description: descPlanGold, numOfMonth: monthSupGold, price: pricePlanGold },
                         config)
                         .then(() => {
@@ -242,7 +242,7 @@ function InfoGymSettings() {
                             console.log(err);
                         });
                 } else if (dataGoldPlan && (pricePlanGold || monthSupGold || descPlanGold)) {
-                    axios.put(`http://localhost:5000/gyms/plan/${dataGoldPlan.id_plan}/update`,
+                    axios.put(`https://nutrifit-g0gn.onrender.com/gyms/plan/${dataGoldPlan.id_plan}/update`,
                         { name: 'Gold', description: descPlanGold, numOfMonth: monthSupGold, price: pricePlanGold },
                         config)
                         .then(() => {
@@ -254,7 +254,7 @@ function InfoGymSettings() {
                 }
             
                 if (!dataLProPlan && pricePlanPro && monthSupPro && descPlanPro) {
-                    axios.post(`http://localhost:5000/gyms/${gymid}/plan/create`,
+                    axios.post(`https://nutrifit-g0gn.onrender.com/gyms/${gymid}/plan/create`,
                         { name: "Premium", description: descPlanPro, numOfMonth: monthSupPro, price: pricePlanPro },
                         config)
                         .then(() => {
@@ -265,7 +265,7 @@ function InfoGymSettings() {
                             console.log(err);
                         });
                 } else if (dataLProPlan && (pricePlanPro || monthSupPro || descPlanPro)) {
-                    axios.put(`http://localhost:5000/gyms/plan/${dataLProPlan.id_plan}/update`,
+                    axios.put(`https://nutrifit-g0gn.onrender.com/gyms/plan/${dataLProPlan.id_plan}/update`,
                         { name: 'Premium', description: descPlanPro, numOfMonth: monthSupPro, price: pricePlanPro },
                         config)
                         .then(() => {

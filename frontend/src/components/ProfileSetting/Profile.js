@@ -46,7 +46,7 @@ const Profile = () => {
   }, []);
   const getUserInfoByUserId = () => {
     axios
-      .get(`http://localhost:5000/users/info/${state.userId}`, {
+      .get(`https://nutrifit-g0gn.onrender.com/users/info/${state.userId}`, {
         headers: {
           Authorization: `Bearer ${state.token}`,
         },
@@ -62,7 +62,7 @@ const Profile = () => {
 
   const updateUserInfo = async () => {
     try {
-      const result =await axios.put(`http://localhost:5000/users/info/${state.userId}`, {
+      const result =await axios.put(`https://nutrifit-g0gn.onrender.com/users/info/${state.userId}`, {
         image ,
         weight,
         height,

@@ -32,9 +32,9 @@ function Settings() {
     }
 
     useEffect(()=>{
-        axios.get(`http://localhost:5000/gyms/${gymid}`,config).then((result) => {
+        axios.get(`https://nutrifit-g0gn.onrender.com/gyms/${gymid}`,config).then((result) => {
             setDataGym(result.data.oneGym);
-            axios.get(`http://localhost:5000/gyms/plan/${gymid}`,config).then((resultPlan) => {
+            axios.get(`https://nutrifit-g0gn.onrender.com/gyms/plan/${gymid}`,config).then((resultPlan) => {
                 resultPlan.data.plans.map((e,i)=>{
                     if(e.name_plan === 'Lite'){
                         setDataLitePlan(e);

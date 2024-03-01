@@ -58,7 +58,7 @@ const UserPrivate = () => {
 
   useEffect(()=>{
     setAllMessages([])
-    axios.get(`http://localhost:5000/coachs/message/${from}/${userId}`,{headers:{
+    axios.get(`https://nutrifit-g0gn.onrender.com/coachs/message/${from}/${userId}`,{headers:{
       Authorization:`Bearer ${token}`
     }}).then((result)=>{
       setAllMessages(result.data.messages)
@@ -69,7 +69,7 @@ const UserPrivate = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/users/info/${userId}`, {
+      .get(`https://nutrifit-g0gn.onrender.com/users/info/${userId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -123,7 +123,7 @@ const UserPrivate = () => {
 
   const getAllCoachs = () => {
     axios
-      .get(`http://localhost:5000/coachs/coach`, {
+      .get(`https://nutrifit-g0gn.onrender.com/coachs/coach`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

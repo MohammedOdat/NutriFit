@@ -78,7 +78,7 @@ function GymGroup() {
     
     useEffect(()=>{
         setAllMessages([]);
-        axios.get(`http://localhost:5000/gyms/message/${gymid}/${roomSelected}`).then((result) => {
+        axios.get(`https://nutrifit-g0gn.onrender.com/gyms/message/${gymid}/${roomSelected}`).then((result) => {
             console.log("messages DB =>",result);
             setAllMessages(result.data.messages)
         }).catch((err) => {
@@ -148,23 +148,23 @@ function GymGroup() {
     }
     
     useEffect(() => {
-        axios.get(`http://localhost:5000/gyms/${gymid}/coach`, config)
+        axios.get(`https://nutrifit-g0gn.onrender.com/gyms/${gymid}/coach`, config)
             .then(coachResult => {
                 setAllCoachs(coachResult.data.coachs);
                 setCoachLoading(false);
-                return axios.get(`http://localhost:5000/gyms/${gymid}/user`, config);
+                return axios.get(`https://nutrifit-g0gn.onrender.com/gyms/${gymid}/user`, config);
             })
             .then(userResult => {
                 
                 setAllUsers(userResult.data.users);
                 console.log("userResult.data.users", userResult.data.users);
                 setUserLoading(false);
-                return axios.get(`http://localhost:5000/gyms/${gymid}`, config);
+                return axios.get(`https://nutrifit-g0gn.onrender.com/gyms/${gymid}`, config);
             })
             .then(gymResult => {
                 setInfoGymLoading(false);
                 setInfoGym(gymResult.data.oneGym);
-                return axios.get(`http://localhost:5000/gyms/plan/${gymid}`, config);
+                return axios.get(`https://nutrifit-g0gn.onrender.com/gyms/plan/${gymid}`, config);
             })
             .then(planResult => {
                 setRooms(planResult.data.plans);

@@ -21,7 +21,7 @@ const Register = () => {
   const [message, setMessage] = useState("")
   const createNewAccount=()=>{
     if(firstName&& lastName&& age&& gender&& email&&password&&roleId){
-        axios.post("http://localhost:5000/users/register",{ firstName, lastName, age, gender, email, password,role_id:roleId }).then((result)=>{
+        axios.post("https://nutrifit-g0gn.onrender.com/users/register",{ firstName, lastName, age, gender, email, password,role_id:roleId }).then((result)=>{
       if(result.data.success){
         setSuccess(true)
         setMessage(result.data.message)

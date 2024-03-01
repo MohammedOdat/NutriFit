@@ -37,7 +37,7 @@ const PrivatePlan = () => {
     const getAllPlans = () => {
       setPlanLoader(true)
         axios
-          .get(`http://localhost:5000/coachs/plan/${coachid}`, {
+          .get(`https://nutrifit-g0gn.onrender.com/coachs/plan/${coachid}`, {
             headers: {
               Authorization: `Bearer ${token}`,
             },
@@ -61,7 +61,7 @@ const PrivatePlan = () => {
 const getCoachInfo=()=>{
   setPicLoader(true)
   setNameLoader(true)
-    axios.get(`http://localhost:5000/users/info/${coachid}`, {
+    axios.get(`https://nutrifit-g0gn.onrender.com/users/info/${coachid}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

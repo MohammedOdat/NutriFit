@@ -20,7 +20,7 @@ function AllGymHome() {
       headers: { Authorization: `Bearer ${state.token}` }
     }
     useEffect(()=>{
-      axios.get('http://localhost:5000/gyms', config).then((result) => {
+      axios.get('https://nutrifit-g0gn.onrender.com/gyms', config).then((result) => {
         setAllGym(result.data.gym);
         console.log(result.data.gym);
       }).catch((err) => {
