@@ -1,0 +1,62 @@
+.body-group{
+    width: 100vw;
+    height: calc(100vh - 69px);
+}
+.group-contener{
+    display: flex;
+    width: 100vw;
+    height: 100%;
+    
+}
+.group-contener ul{
+    list-style: none;
+    text-align: start;
+    margin: 0;
+    padding: 0;
+}
+
+.contener-room{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.control-gym{
+    border-top: 1px solid #303030;
+    padding-top: 10px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.contener-chat{
+    width: 60%;
+    border-left: 1px solid #303030;
+    border-right: 1px solid #303030;
+}
+.contener-member{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.head{
+    background-color: #303030;
+    color: #A1E533;
+    list-style: none;
+    text-align: start;
+    margin: 0;
+    padding: 5px;
+}
+.li-gym{
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+.btn-gym-chat{
+    border: 0;
+    background-color: #A1E533;
+    border-radius: 4px;
+    font-weight: bold;
+}

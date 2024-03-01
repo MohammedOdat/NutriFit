@@ -1,0 +1,46 @@
+.nav-bar{
+    display: flex;
+    padding: 10px 100px  10px 100px;
+    height: 10%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #101010;
+    color: #D9D9D9;
+    user-select: none;
+
+    border-bottom: 1px solid #A1E533;
+}
+.navbar-lu{
+    display: flex;
+    padding: 0;
+    list-style:none;
+    font-weight: bold;
+    position: relative;
+    margin: 0;
+}
+.nav-map{
+    margin: 10px;
+    width: 51%;
+    cursor: pointer;
+    user-select: none;
+    font-size: 18px;
+}
+.end{
+    margin-right: 0;
+}
+.button{
+    border: 0;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #A1E533;
+    font-weight: bold;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #7aad28;
+}
+.link-in-button{
+    text-decoration: none;
+    color: #101010;
+}

@@ -1,0 +1,172 @@
+.Register-Page {
+  height: calc(100vh - 68px);
+  display: flex;
+  background-color: #101010;
+  justify-content: space-around;
+  align-content: center;
+
+}
+.Left-Image {
+  height: 100%;
+  width: 50%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.image {
+  height: 90%;
+}
+.right-input-contener{
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+.Right-Inputs{
+  height: 100%;
+  width: 50%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Title{
+    margin-bottom: 50px;
+    font-size:3.5em;
+    font-weight: bold;
+}
+.FirstName-LastName {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.FirstName {
+  width: 47.5%;
+  text-align: left;
+  font-size: large;
+}
+.LastName {
+  width: 47.5%;
+  text-align: left;
+  font-size: large;
+}
+.Email {
+  text-align: left;
+  font-size: large;
+}
+.Password {
+  text-align: left;
+  font-size: large;
+}
+.Age-Gender{
+    display: flex;
+    gap: 10px;
+}
+.Age{
+    text-align: left;
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+}
+.Gender{
+    background-color: white;
+    border-radius: 7px;
+    display: flex;
+    width: 100%;
+    font-size: larger;
+    height:100%;
+    text-align: center;
+}
+.Gender-label{
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.Male{
+    text-align: center;
+    width: 50%;
+    border-right:solid #3d3939;
+    color: #000000;
+
+}
+.Female{
+    text-align: center;
+    width: 50%;
+    color: #000000;
+}
+.Account{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+    font-size: larger;
+}
+.User-Coach{
+    background-color: white;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.User{
+    text-align: center;
+    width: 50%;
+    border-right:solid #3d3939;
+    color: #000000;
+
+}
+.Coach{
+    text-align: center;
+    width: 50%;
+    color: #000000;
+}
+.Check-Forget{
+display: flex;
+justify-content: space-between;
+
+}
+.Register-Btn Button{
+    margin-top: 10px;
+    width: 100%;
+    border: 0;
+    font-size: x-large;
+    background-color: #A1E533;
+    color : black;
+    font-weight: bold;
+}
+.doYou{
+    margin-top: 5px;
+    text-align: left;
+}
+.Check , .Forget {
+    cursor: pointer;
+    color: #7aad28;
+}
+.Register-Btn Button:hover{
+    background-color: #7aad28;
+    color: #000000;
+}
+.SuccessMessage {
+    align-self: center;
+    border-radius: 4px;
+    height: 60px;
+    width: 100%;
+    background-color: #A1E533;
+    color: black;
+    text-align: center;
+  }
+  
+  .ErrorMessage {
+    padding: 5px;
+    border-radius: 4px;
+    align-self: center;
+  
+    width: 100%;
+    background-color: hsla(0, 100%, 50%, 0.402);
+    color: white;
+    text-align: center;
+  }
+  

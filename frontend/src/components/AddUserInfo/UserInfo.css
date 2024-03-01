@@ -1,0 +1,65 @@
+.user_info{
+  height: calc(100vh - 69px);
+  width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.userinfo_form{
+    width: 70%;
+    height: 90%;
+    background-color: #272727;
+    display: flex;
+    flex-direction: column;
+border-radius: 16px;
+padding: 0 35px 0 35px;
+}
+.a{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 40px;
+}
+.profile_img {
+  display: flex;
+  justify-content: center;
+}
+.inpuut{
+    width: 40px;
+}
+.Title{
+    margin-bottom: 50px;
+    font-size:3.5em;
+    font-weight: bold;
+}
+.height-width {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.height {
+  width: 47.5%;
+  text-align: left;
+  font-size: large;
+}
+.weight {
+  width: 47.5%;
+  text-align: left;
+  font-size: large;
+}
+.goal {
+  text-align: left;
+  font-size: large;
+  
+}
+.submit-Btn Button{
+  justify-self:end;
+    margin-top: 30px;
+    width: 40%;
+    border: 0;
+    font-size: x-large;
+    background-color: #A1E533;
+    color : black;
+    font-weight: bold;
+}

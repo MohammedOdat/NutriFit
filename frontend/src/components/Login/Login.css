@@ -1,0 +1,135 @@
+
+.login-Page {
+  height:calc(100vh - 68px);
+  display: flex;
+  background-color: #101010;
+  justify-content: space-around;
+  align-content: center;
+
+}
+.login-Page .Left-Image {
+  height: 100%;
+  width: 50%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+
+.continer-form-login{
+  width: 50%;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.login-Page .image {
+  height: 90%;
+}
+.login-Page .Right-Inputs{
+  height: 100%;
+  width: 50%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-Page .Title{
+    margin-bottom: 50px;
+    font-size:3.5em;
+    font-weight: bold;
+}
+
+
+.login-Page .Email {
+  text-align: left;
+  font-size: large;
+}
+.login-Page .Password {
+  text-align: left;
+  font-size: large;
+}
+.login-Page .Check-Forget{
+display: flex;
+justify-content: space-between;
+
+}
+.login-Page .Register-Btn Button{
+    margin-top: 10px;
+    width: 100%;
+    border: 0;
+    font-size: x-large;
+    background-color: #c6df9e;
+    color : black;
+    font-weight: bold;
+}
+.login-Page .doYou{
+    margin-top: 5px;
+    text-align: left;
+}
+.login-Page .Check , .login-Page .Forget {
+    cursor: pointer;
+    color: #7aad28;
+}
+.login-Page .Register-Btn Button:hover{
+    background-color: #7aad28;
+    color: #000000;
+}
+  /* .img{
+    height: 1000px;
+  } */
+
+  
+  .Email {
+    text-align: left;
+    font-size: large;
+  }
+  .Password {
+    text-align: left;
+    font-size: large;
+  }
+
+  .button-login{
+    font-weight: bold;
+    font-size: x-large;
+    background-color: #A1E533;
+    border: 0;
+    padding: 4px;
+    border-radius: 6px;
+  }
+  .SuccessMessage {
+    margin-top: 10px;
+    align-self: center;
+    border-radius: 4px;
+    height: 60px;
+    width: 25%;
+    background-color: #a1e53396;
+    color: black;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+font-weight: bold;
+font-size: 18px;
+  }
+  
+  .ErrorMessage {
+    margin-top: 10px;
+    border-radius: 4px;
+    align-self: center;
+    padding: 5px;
+    width: 25%;
+    background-color: hsla(0, 100%, 50%, 0.402);
+    color: white;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+font-size: 18px;
+  }

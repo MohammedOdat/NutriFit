@@ -1,0 +1,7 @@
+.contener-not-found{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #101010;
+    height: calc(100vh - 66.39px);
+}

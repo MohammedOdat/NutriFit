@@ -1,0 +1,87 @@
+.page{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.private_user {
+    background-color: #101010;
+    min-height: calc(100vh - 68px);
+    /* user-select: none; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  
+  .contener-navbar-home {
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    color: #101010;
+    /* align-self: center; */
+  }
+  .ser{
+      width: 100%;
+   
+  
+  }
+  .search_bar-input{
+    width: 70%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 0;
+    background-color: #3d3939;
+    color: white
+    ;
+  }
+  
+  .coachs {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      /* margin-top: 5px; */
+      align-items: center;
+      width:100%;
+  }
+  .coach_bar {
+
+    display : flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #3d3939;
+    border-radius: 10px;
+    width: 100%;
+  }
+  .coach_info {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    font-size: x-large;
+  }
+  .coach_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .join-private-btn{
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #A1E533;
+    color: #101010;
+    border: 0;
+    /* padding: 20px; */
+  }
+  
+
+  .join-private-btn:hover{
+    background-color: #83b92c;
+  }
+  .My-coachs{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  

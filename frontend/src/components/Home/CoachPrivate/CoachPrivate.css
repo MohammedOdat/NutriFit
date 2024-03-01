@@ -1,0 +1,181 @@
+.Coach-Private-Page {
+    height: calc(100vh - 69px);
+    display: flex;
+    background-color: #101010;
+  }
+  .Left-Side{
+    border-right: 1px solid #303030;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+
+  }
+  .User-Filter{
+    height: 5%;
+    width:95%;
+    display: flex;
+    justify-content: left;
+  }
+  .User-List{
+    height: 85%;
+    width: 100%;
+    margin-top: 5px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 10px; */
+    overflow: auto;
+  }
+  option{
+    background-color: #3d3939;
+    color:white;
+  }
+  .User-Name{
+    cursor: pointer;
+    background-color: #3d3939;
+    border-radius: 4px;
+    width: 95%;
+    font-size: larger;
+    font-weight: bolder;
+    text-align: left;
+    padding-left: 5px;
+  }
+  .Private-img svg{
+
+    border-radius:50%;
+    justify-self: flex-start;
+
+  }
+  .My-Private{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.85rem;
+    height: 10%;
+    width: 100%;
+    align-items: center;
+    border-top: 1px solid #303030;
+  }
+  .img-title{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .Private-Title{
+    font-size: x-large;
+    font-weight: bolder;
+  }
+  .My-Private svg:hover{
+fill: #6c3e3e;
+  }
+  .img-title svg:hover{
+    fill:#575757;
+    cursor: pointer;
+  }
+  .Right-Side{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .Header{
+    padding-left: 5px;
+    text-align: left;
+    width: 100%;
+    height: 6%;
+    background-color: #3d3939;
+    font-size: x-large;
+  }
+  .Input-Button{
+  height: 15%;
+  background-color:#3d3939 ;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
+  }
+  .Input{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .Buttons{
+    display: flex;
+    justify-content: space-between;
+  }
+  .Buttons Button{
+    background-color: #A1E533;
+    border: 0;
+    color: black;
+    font-weight: bolder;
+  }
+  .Buttons Button:hover{
+    background-color:#7aad28 ;
+  }
+  .left{
+    display: flex;
+    gap: 5px;
+  }
+  
+  
+  #inputPassword5{
+    font-size: medium;
+    font-weight: 500;
+  }
+ 
+  .message{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    /* transform: scaleY(-1); */
+  }
+  .msg{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    /* transform: scaleY(-1); */
+    
+  }
+  .user-message{
+    background-color: #3d3939;
+    width: 90%;
+    text-align: left;
+    padding-left: 5px;
+    font-size: large;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    box-shadow:  grey; 
+    border-radius: 10px;
+  }
+   
+
+  ::-webkit-scrollbar-thumb {
+    background: #959393; 
+    border-radius: 10px;
+  }
+  
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #575757; 
+  }
+  /* .show{
+    position: absolute;
+    top: 4%;
+    left: 6px;
+    fill: #7aad28;
+} */

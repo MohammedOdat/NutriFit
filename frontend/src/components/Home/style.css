@@ -1,0 +1,104 @@
+.contener-home{
+    background-color: #101010;
+    min-height: calc(100vh - 69px);
+    user-select: none;
+}
+.contener-navbar-home{
+    user-select: none;
+    margin: 0 100px 20px 100px;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    list-style: none;
+    color: #101010;
+    
+}
+.nav-home{
+    background-color: #404040;
+    padding: 12.5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.gyms{
+    color: #FFFFFF;
+    border-radius: 0 0 0 10px;
+}
+
+.gyms-selected{
+    color: #101010;
+    background-color: #A1E533;
+    border-radius: 0 0 0 10px;
+}
+.private{
+    color: #FFFFFF;
+}
+.private-selected{
+    background-color: #A1E533;
+}
+.all-gyms{
+    border-radius: 0 0 10px 0;
+    color: #FFFFFF;
+}
+.all-gyms-selected{
+    border-radius: 0 0 10px 0;
+    background-color: #A1E533;
+}
+
+
+
+.contener-gym-viewer{
+    height: 99%;
+    margin:0 100px 0 100px;
+}
+.gym-viewer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #7aad27;
+    color: #101010;
+    min-height: 200px;
+    max-height: 250px;
+    padding: 0.5% 2% 0.5% 2%;
+    border-radius: 8px;
+}
+.gym-viewer p{
+    margin-bottom: 0;
+
+}
+
+.name-gym{
+    font-weight: bold;
+    font-size: 20px;
+    height: 25%;
+}
+.desc-gym{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    font-size: 14px;
+    min-height: 20px;
+    color: white;
+    max-height: 40%;
+    
+}
+.member-in-gym{
+    height: 10%;
+}
+.button-join{
+    border: 0;
+    margin-top: 10px;
+    background-color: #101010;
+    color: white;
+    padding: 2.5px 20px 2.5px 20px;
+    border-radius: 4px;
+}
+.image-gym-in-card{
+    height: 170px;
+    object-fit: cover;
+}
+.card-text{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}

@@ -1,0 +1,51 @@
+.home-landing{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    
+}
+.container-title-hone-landing{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 100px;
+}
+.title-home-landing{
+    font-size:50px;
+     text-align:start; 
+     font-weight:bold;
+     margin:0;
+}
+
+.join-now{
+    border: 0;
+    padding: 15px;
+    border-radius: 4px;
+    background-color: #A1E533;
+    color: #101010;
+    cursor: pointer;
+}
+
+.join-now:hover{
+    background-color: #7aad28;
+}
+
+.container-image-hone-landing{
+    width: 50%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: linear-gradient(to bottom right, transparent 50%, #A1E533 50%);
+    background-size: 100% 135%;
+    background-repeat: no-repeat;
+}
+
+.image-home-landing{
+    height: 95%;
+}
+

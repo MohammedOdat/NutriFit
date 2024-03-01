@@ -1,0 +1,111 @@
+.contener-payment{
+    height: calc(100vh - 69px);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.invoice{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 25%;
+    text-align: start;
+}
+.inv{
+    display: flex;
+    justify-content: space-between;
+}
+.form-pay{
+    width: 50%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+}
+.text{
+    width: 100%;
+    margin: 0;
+}
+.text-card{
+    width: 100%;
+    margin: 0;
+}
+.input-card{
+    width: 100%;
+    background-color: white;
+    border-radius: 4px;
+    padding-top: 5px;
+    
+    padding-bottom: 5px;
+    border: 1px solid gray;
+    text-align: start;
+}
+.d{
+    width: 100%;
+    border-radius: 0 4px 4px 0 ;
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-left: 0;
+    border: 1px solid gray;
+    text-align: start;
+}
+.c{
+    width: 100%;
+    border-radius: 4px 0 0 4px ;
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid gray;
+    border-right: 0;
+    text-align: start;
+}
+
+.pay-btn{
+    width: 50%;
+    border: 0;
+    border-radius: 4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #A1E533;
+    font-weight: bold;
+}
+.SuccessMessage {
+    margin-top: 10px;
+    align-self: center;
+    border-radius: 4px;
+    height: 60px;
+    width: 25%;
+    background-color: #a1e53396;
+    color: black;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+font-weight: bold;
+font-size: 18px;
+  }
+  
+  .ErrorMessage {
+    margin-top: 10px;
+    border-radius: 4px;
+    align-self: center;
+    padding: 5px;
+    width: 25%;
+    background-color: hsla(0, 100%, 50%, 0.402);
+    color: white;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+font-size: 18px;
+  }

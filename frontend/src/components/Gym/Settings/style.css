@@ -1,0 +1,29 @@
+.body-settings{
+    min-height: calc(100vh - 69px);
+    max-height: fit-content;
+}
+.contener-settings{
+    display: flex;
+    padding: 10px 100px 10px 100px;
+    height: 100%;
+}
+
+.list-contener{
+    width: 10%;
+    min-height: calc(100vh - 90px);
+    padding-right: 10px;
+    border-right: 1px solid #303030;
+}
+.list-settings{
+    list-style: none;
+    text-align: start;
+}
+.li-list-settings{
+    padding: 5px;
+    cursor: pointer;
+}
+.contener-page{
+    width: 90%;
+    min-height: 100%;
+    max-height: fit-content;
+}

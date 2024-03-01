@@ -1,0 +1,49 @@
+.contact-landing-main{
+    height: 100vh;
+}
+.contact-landing{
+    height: 88%;
+    display: flex;
+}
+
+.contener-contact-form{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.btn-contact{
+    border: 0;
+    border-radius: 4px;
+    background-color: #656565;
+    color: white;
+    padding: 4px;
+    width: 48%;
+}
+
+.contener-input{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    width: 50%;
+}
+.contact-inp{
+    border: 0;
+    border-radius: 4px;
+    padding: 10px;
+}
+.message-input{
+    border: 0;
+    border-radius: 4px;
+    height: 40%;
+}
+.contener-image{
+    width: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}

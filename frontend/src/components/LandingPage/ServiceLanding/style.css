@@ -1,0 +1,63 @@
+.service-landing{
+    height: 100vh;
+}
+
+.container-service-landing{
+    display: flex;
+    padding-left: 100px;
+    margin-top: 7%;
+    padding-right: 100px;
+    flex-direction: column;
+}
+
+.container-service-title{
+    display: flex;
+    font-size: 32px;
+    justify-content: center;
+    color: #A1E533;
+
+}
+
+.container-service-card{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-service{
+    margin-top: 3%;
+    background-color: #211F1F;
+    border-radius: 0 15px 0 0;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+}
+
+.title-card{
+    height: 15%;
+    font-size:26px;
+    font-weight:bold;
+    color:#A1E533;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.desc-card{
+    min-height: 70%;
+    font-size:20px;
+     padding:30px;
+     text-align: start;
+}
+.container-button-card{
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-card{
+    border: 0;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #A1E533;
+}

@@ -1,0 +1,75 @@
+.recipe {
+  min-height: calc(100vh - 69px);  
+  
+  background-color: #101010;
+  padding: 10px 100px 10px 100px ;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.recipe_card {
+  min-height: calc(100vh - 69px);  
+  height: 100%;
+}
+.ccard {
+  padding: 30px;
+}
+
+
+.searchbar{
+    width: 70%;
+    border-radius: 8px;
+    border: 0;
+    background-color: #404040;
+    color: white;
+    font-size: large;
+    height: 38px;
+    margin: 0;
+   
+    
+}
+
+.search_bar{
+padding-top: 1rem;
+display: flex;
+gap: 5px;
+font-display: row;
+justify-content: center;
+align-items: center;
+
+}
+.cardbody{
+    height: 200px;
+    border-radius: 100px;
+}
+.image_card{
+    height:100%;
+    width: 100%;
+}
+.recipe_buttons{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.recipe_buttons.Button{
+    padding-left: 20px;
+}
+.text-card{
+    border-radius: 10px;
+}
+.calory{
+    font-size: small;
+    border-radius: 10px;
+    background-color: beige;
+    
+}
+#dropDown .show{
+    fill: #7aad28;
+
+   
+    
+}
+.show{
+    color:#A1E553;
+    cursor: pointer;
+}

@@ -1,0 +1,20 @@
+.main{
+    display: flex;
+    justify-content: space-around;
+    background-color: #404040;
+    padding-top: 25px;
+}
+.left{
+    display: flex
+    ;
+    flex-direction: column;
+}
+.mid{
+    display: flex;
+    flex-direction: column;
+}
+.right{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}

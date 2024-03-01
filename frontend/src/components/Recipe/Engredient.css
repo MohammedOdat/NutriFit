@@ -1,0 +1,81 @@
+.ingredient-page{
+  height: calc(100vh - 69px);
+  padding: 10px 100px 10px 100px ;
+}
+
+.contenter-content{
+  display: flex;
+  height: 95%;
+}
+
+.img-some-info{
+  display: flex;
+  background-color: #202020;
+  height: 80%;
+  margin-top: 50px;
+  border-radius: 18px;
+  flex-direction: column;
+  gap: 5%;
+  align-items: center;
+  width: 20%;
+}
+.info-recipe{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 300px;
+  text-align: start;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 80%;
+
+  margin: 50px;
+  height: 80%;
+  perspective: 100000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #202020;
+  border-radius: 18px;
+}
+
+.flip-card-back {
+  background-color: #202020;
+  border-radius: 18px;
+  transform: rotateY(180deg);
+}
+
+
+.ul-list{
+  display:flex;
+  flex-direction:column; 
+  text-align:start;
+  gap:35px;
+  flex-wrap: wrap;
+  height:100%;
+}

@@ -1,0 +1,154 @@
+.setting-Page{
+    display: flex;
+    flex-direction: column;
+    height:calc(100vh - 94px);
+    align-items: center;
+    margin-top: 25px;
+}
+.Items{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height: 75%;
+    width: 90%;
+    background-color: #202020;
+    border-radius: 16px;
+}
+.Open-Private{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+padding: 1rem;
+gap: 25px;
+}
+.open{
+    line-height: 0%;
+    margin-top: 9px;
+}
+.Plans{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+    height: 100%;
+    align-items: center;
+
+}
+.Plan{
+    height: 90%;
+    background-color: #101010;
+    padding: 10px;
+    width: 30%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+.inputs{
+    height: 90% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Description-Input{
+    text-align: left;
+    height: 25%;
+}
+.Plan-Title{
+    font-weight: bold;
+    font-size:xx-large ;
+}
+.Sub-Duration,.Price{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.month,.num-price {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+.Save-Btn Button{
+    border: 0;
+    font-size: large;
+    background-color: #A1E533;
+    color : black;
+    font-weight: bold;
+}
+.Save-Btn Button:hover{
+    background-color: #7aad28;
+    color: #000000;
+}
+.Save-Btn Button:disabled{
+    background-color: #7aad28;
+    color: #000000;
+}
+.SuccessMessage {
+    margin-top: 10px;
+    align-self: center;
+    border-radius: 4px;
+    height: 60px;
+    width: 25%;
+    background-color: #a1e53396;
+    color: black;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+font-weight: bold;
+font-size: 18px;
+  }
+  
+  .ErrorMessage {
+    margin-top: 10px;
+    border-radius: 4px;
+    align-self: center;
+    padding: 5px;
+    width: 25%;
+    background-color: hsla(0, 100%, 50%, 0.402);
+    color: white;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+font-size: 18px;
+  }
+  .form-check-input {
+    --bs-form-check-bg:#ded9d9 !important;
+    border: none !important;
+    background-color: #e8e7e7 !important;
+    border-radius: 2em;
+
+  }
+  .form-switch .form-check-input {
+    width: 100% !important;
+    margin-top: 0 !important;
+    width: 3em !important;
+    height: 1.42em !important;
+   /* align-self: center !important; */
+  
+ 
+
+
+
+  }
+  .form-check-input:checked  {
+    background-color: #A1E533 !important;
+    border-color: #A1E533 !important;
+    
+
+
+  }
+  .toggle{
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: center;
+
+  }
